@@ -17,6 +17,11 @@ Master REST and GraphQL API design principles to build intuitive, scalable, and 
 - Creating developer-friendly API documentation
 - Optimizing APIs for specific use cases (mobile, third-party integrations)
 
+## Interactive Design Process
+
+- **Clarify Requirements**: Before finalizing a design, ensure you understand the domain and constraints.
+- **Feedback Loop**: Use the `mcp-feedback-enhanced` tool (e.g., `ask_followup_question`) if available to ask clarifying questions or present design options for review. If not available, use standard chat.
+
 ## Core Concepts
 
 ### 1. RESTful Design Principles

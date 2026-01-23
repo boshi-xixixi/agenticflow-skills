@@ -33,4 +33,4 @@ When a user provides a file or pattern argument:
 3. Apply all rules from the fetched guidelines
 4. Output findings using the format specified in the guidelines
 
-If no files specified, ask the user which files to review.
+If no files specified, ask the user which files to review. Use `mcp-feedback-enhanced` (e.g., `ask_followup_question`) if available.

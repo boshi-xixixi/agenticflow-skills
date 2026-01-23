@@ -15,6 +15,7 @@ Before coding, understand the context and commit to a BOLD aesthetic direction:
 - **Tone**: Pick an extreme: brutally minimal, maximalist chaos, retro-futuristic, organic/natural, luxury/refined, playful/toy-like, editorial/magazine, brutalist/raw, art deco/geometric, soft/pastel, industrial/utilitarian, etc. There are so many flavors to choose from. Use these for inspiration but design one that is true to the aesthetic direction.
 - **Constraints**: Technical requirements (framework, performance, accessibility).
 - **Differentiation**: What makes this UNFORGETTABLE? What's the one thing someone will remember?
+- **Clarification**: If requirements are vague, use `mcp-feedback-enhanced` (e.g., `ask_followup_question`) if available to ask for direction (e.g., "Do you prefer a minimal or maximalist style?"). If not available, use standard chat.
 
 **CRITICAL**: Choose a clear conceptual direction and execute it with precision. Bold maximalism and refined minimalism both work - the key is intentionality, not intensity.
 

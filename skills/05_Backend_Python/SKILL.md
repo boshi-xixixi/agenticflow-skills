@@ -33,3 +33,7 @@ description: 专注于 Python 后端开发，涵盖 FastAPI、异步编程和性
 
 - **API 开发**: "请使用 FastAPI 模板帮我创建一个用户注册接口。"
 - **并发优化**: "请参考异步 Python 模式，帮我优化这个爬虫脚本。"
+
+## 交互式开发 (Interactive Development)
+
+在设计架构或重构代码时，如果不确定用户的具体偏好（如框架选择、同步/异步决策），请使用 `mcp-feedback-enhanced` (e.g., `ask_followup_question`) 主动询问。如果该工具不可用，则通过对话直接询问。

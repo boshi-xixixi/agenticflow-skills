@@ -17,6 +17,7 @@ description: Implement GitOps workflows with ArgoCD and Flux for automated, decl
 ### 推荐 MCP 工具
 *   **Kubectl MCP**: 允许 AI 直接监控集群状态和调试 Pod。
 *   **Git/GitHub MCP**: 用于管理 GitOps 仓库的配置变更和 PR 流程。
+*   **mcp-feedback-enhanced**: 在配置自动同步策略 (Auto-Sync) 或处理敏感信息 (Secrets) 时，使用 `ask_followup_question` 确认用户的安全偏好和操作边界。
 
 ---
 

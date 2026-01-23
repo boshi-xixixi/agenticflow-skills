@@ -93,6 +93,10 @@ df.to_excel('output.xlsx', index=False)
 
 ## Excel File Workflows
 
+## 交互式开发 (Interactive Development)
+
+在创建复杂财务模型或进行数据分析时，使用 `mcp-feedback-enhanced` (e.g., `ask_followup_question`) 确认关键假设 (Assumptions)、格式要求或图表偏好。
+
 ## CRITICAL: Use Formulas, Not Hardcoded Values
 
 **Always use Excel formulas instead of calculating values in Python and hardcoding them.** This ensures the spreadsheet remains dynamic and updateable.

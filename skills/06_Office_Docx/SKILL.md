@@ -18,6 +18,7 @@ license: Proprietary. LICENSE.txt has complete terms
 ### 推荐 MCP 工具
 *   **Filesystem MCP**: 允许 AI 直接操作解压后的 XML 目录，进行更精细的结构验证。
 *   **Git MCP**: 用于管理文档编辑过程中的版本回滚。
+*   **mcp-feedback-enhanced**: 允许 AI 在文档创建或编辑过程中，使用 `ask_followup_question` 向用户确认内容细节（如“这个段落的语气是否需要更正式？”）或编辑范围（如“是否需要保留所有修订记录？”）。
 
 ---
 

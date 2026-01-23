@@ -16,6 +16,7 @@ description: 专注于数据库设计、SQL 优化和迁移策略。
 
 ### 推荐 MCP 工具
 *   **PostgreSQL/MySQL MCP**: 允许 AI 直接连接数据库，获取实时的 Schema 信息和执行 EXPLAIN 分析，而不仅仅是基于静态代码推断。
+*   **mcp-feedback-enhanced**: 允许 AI 在设计表结构或优化策略时，如果遇到不确定性，使用 `ask_followup_question` 等工具主动向用户确认业务需求或权衡方案。
 
 ---
 

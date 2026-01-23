@@ -12,6 +12,10 @@ This guide covers essential PDF processing operations using Python libraries and
 
 ## Quick Start
 
+## 交互式处理 (Interactive Processing)
+
+在进行不可逆的合并/拆分操作或复杂的表单填充时，使用 `mcp-feedback-enhanced` (e.g., `ask_followup_question`) 确认操作范围或数据源。
+
 ```python
 from pypdf import PdfReader, PdfWriter
 

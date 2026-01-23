@@ -43,6 +43,11 @@ description: Git 版本控制与协作专家，涵盖 GitHub/Gitee 平台操作�
 
 ## 🤖 智能体与 MCP 增强
 
+### 自然语言交互 (Natural Language Interaction)
+- **提交代码**: "帮我规范地提交刚才的修改"
+- **处理 PR**: "帮我针对 main 分支创建一个 PR"
+- **同步状态**: "检查一下现在远程仓库是不是最新的"
+
 ### 推荐智能体角色
 *   **Git Workflow Specialist**: 详见 [AGENTS.md](AGENTS.md)。
     *   专注于代码审查、提交信息规范化和发布流程管理。
@@ -53,5 +58,8 @@ description: Git 版本控制与协作专家，涵盖 GitHub/Gitee 平台操作�
     *   分析 git log 生成 Changelog。
 *   **GitHub MCP**:
     *   创建 Issue, 提交 PR, Review 代码, 管理 Releases。
+*   **mcp-feedback-enhanced**:
+    *   在生成 PR 描述或 Commit Message 时，如果上下文不足，使用 `ask_followup_question` 询问用户具体的修改原因或关联的 Issue。
+    *   在进行 Code Review 时，使用该工具确认用户的 Review 重点。
 
 ---

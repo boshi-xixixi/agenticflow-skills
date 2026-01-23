@@ -1,6 +1,6 @@
 ---
 name: webapp-testing
-description: Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.
+description: 浏览器自动化与网页交互工具包。支持使用 Playwright 进行网页自动化、数据采集、UI 交互（如点击、填表、抢购/抢福袋）、自动测试及截图。适用于需要模拟用户行为操作任何本地或远程网页的场景。
 license: Complete terms in LICENSE.txt
 ---
 
@@ -18,6 +18,7 @@ license: Complete terms in LICENSE.txt
 ### 推荐 MCP 工具
 *   **Puppeteer/Playwright MCP**: 允许 AI 直接控制浏览器进行视觉验证和交互测试。
 *   **Filesystem MCP**: 用于保存测试截图和日志报告。
+*   **mcp-feedback-enhanced**: 允许 AI 在编写测试脚本前，使用 `ask_followup_question` 确认关键的测试路径或断言条件。
 
 ---
 

@@ -40,3 +40,7 @@ description: 专注于构建高性能、可扩展且架构清晰的 Flutter 应�
 - **性能诊断**: "列表滚动有点卡，请根据 `Flutter性能优化` 给我一些排查建议。"
 - **自动化测试**: "请根据 `Flutter测试与质量保证` 为这个登录页面编写 Widget 测试用例。"
 - **部署发布**: "我想配置 GitHub Actions 自动发布 Android 测试包，请参考 `Flutter工程化与部署` 给我建议。"
+
+## 交互式开发 (Interactive Development)
+
+在设计架构或进行性能调优时，如果不确定用户的具体业务场景或性能指标要求，请使用 `mcp-feedback-enhanced` (e.g., `ask_followup_question`) 主动询问。

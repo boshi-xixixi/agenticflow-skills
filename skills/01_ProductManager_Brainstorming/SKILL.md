@@ -16,6 +16,7 @@ Start by understanding the current project context, then ask questions one at a 
 **Understanding the idea:**
 - Check out the current project state first (files, docs, recent commits)
 - Ask questions one at a time to refine the idea
+- **Feedback Tool**: If `mcp-feedback-enhanced` (e.g., `ask_followup_question`) is available, USE IT to ask these questions. If not, use standard chat.
 - Prefer multiple choice questions when possible, but open-ended is fine too
 - Only one question per message - if a topic needs more exploration, break it into multiple questions
 - Focus on understanding: purpose, constraints, success criteria
@@ -48,6 +49,11 @@ Start by understanding the current project context, then ask questions one at a 
 - Ask: "Ready to set up for implementation?"
 - Use superpowers:using-git-worktrees to create isolated workspace
 - Use superpowers:writing-plans to create detailed implementation plan
+
+## 💡 自然语言交互 (Interaction)
+- **启动探索**: "我有个新想法..." 或 "帮我规划一下这个功能的实现方案"
+- **深入讨论**: "针对这个细节，还有更好的方案吗？"
+- **确认输出**: "就这样，帮我写一份 PRD 吧"
 
 ## Key Principles
 
