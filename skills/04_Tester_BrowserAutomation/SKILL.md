@@ -1,6 +1,6 @@
 ---
 name: webapp-testing
-description: 浏览器自动化与网页交互工具包。支持使用 Playwright 进行网页自动化、数据采集、UI 交互（如点击、填表、抢购/抢福袋）、自动测试及截图。适用于需要模拟用户行为操作任何本地或远程网页的场景。
+description: Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.
 license: Complete terms in LICENSE.txt
 ---
 

@@ -43,11 +43,6 @@ description: Git 版本控制与协作专家，涵盖 GitHub/Gitee 平台操作�
 
 ## 🤖 智能体与 MCP 增强
 
-### 自然语言交互 (Natural Language Interaction)
-- **提交代码**: "帮我规范地提交刚才的修改"
-- **处理 PR**: "帮我针对 main 分支创建一个 PR"
-- **同步状态**: "检查一下现在远程仓库是不是最新的"
-
 ### 推荐智能体角色
 *   **Git Workflow Specialist**: 详见 [AGENTS.md](AGENTS.md)。
     *   专注于代码审查、提交信息规范化和发布流程管理。

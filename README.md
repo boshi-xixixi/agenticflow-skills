@@ -19,6 +19,9 @@
 
 **AgenticFlow-Skills** 不仅仅是一个文档库，它定义了一种全新的 **AI 交互单元 —— "Skill"（技能）**。
 
+**💡 Quick Links**: 
+- **[Developer Skills Guide](./DEVELOPER_SKILLS_GUIDE.md)**: Recommended for beginners to quickly master the usage of various skills.
+
 在 AI 时代，"Skill" 是连接人类意图与模型能力的桥梁。一个高质量的 Skill 包含：
 1.  **Context (上下文)**：该领域所需的专业知识背景。
 2.  **SOP (标准作业程序)**：专家级的操作步骤和思维链。

@@ -50,11 +50,6 @@ Start by understanding the current project context, then ask questions one at a 
 - Use superpowers:using-git-worktrees to create isolated workspace
 - Use superpowers:writing-plans to create detailed implementation plan
 
-## 💡 自然语言交互 (Interaction)
-- **启动探索**: "我有个新想法..." 或 "帮我规划一下这个功能的实现方案"
-- **深入讨论**: "针对这个细节，还有更好的方案吗？"
-- **确认输出**: "就这样，帮我写一份 PRD 吧"
-
 ## Key Principles
 
 - **One question at a time** - Don't overwhelm with multiple questions
