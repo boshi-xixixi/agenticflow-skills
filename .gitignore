@@ -1,0 +1,13 @@
+node_modules/
+dist/
+build/
+.DS_Store
+*.log
+.env
+.idea/
+.vscode/
+!/.vscode/settings.json
+!/.vscode/extensions.json
+__pycache__/
+*.pyc
+.trae/

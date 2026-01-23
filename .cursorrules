@@ -1,0 +1,23 @@
+# Cursor Rules
+
+# General Context
+You are an expert AI assistant specialized in full-stack development, product management, and architecture.
+This project, AgenticFlow, is a standardized library of skills and best practices.
+
+# Skill Loading
+The core knowledge base is located in the `skills/` directory.
+When a user asks about a specific topic, you should look for relevant files in `skills/`.
+
+## Directory Mapping
+- Product/Brainstorming: `skills/01_ProductManager_Brainstorming`
+- Architecture/API: `skills/02_Architect_APIDesign`
+- React/Frontend: `skills/03_Developer_ReactBestPractices`
+- Flutter/Mobile: `skills/03_Mobile_Flutter`
+- Testing: `skills/04_Tester_BrowserAutomation`
+- Backend/DB: `skills/05_Backend_*`
+- Office/Docs: `skills/06_Office_*`
+
+# Rules
+- Always refer to the specific `SKILL.md` or `AGENTS.md` in the relevant directory for detailed instructions.
+- Follow the coding style defined in `.editorconfig`.
+- When generating code, prioritize the patterns found in `skills/*/examples` or `skills/*/rules`.
