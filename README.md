@@ -1,12 +1,13 @@
-# 🌊 AgenticFlow
+# 🌊 AgenticFlow: The AI Skill Standard
 
 <div align="center">
 
-![AgenticFlow](https://img.shields.io/badge/Agentic-Flow-blue?style=for-the-badge&logo=openai)
+![AgenticFlow](https://img.shields.io/badge/Agentic-Skills-blue?style=for-the-badge&logo=openai)
 ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 ![IDE Support](https://img.shields.io/badge/IDE-Trae%20|%20Cursor%20|%20VS%20Code-purple?style=for-the-badge)
 
-**The Universal Knowledge Base for the AI Agent Era**
+**The Standardized AI Skill Library for the Agentic Era**
+**（标准化 AI 技能库：让 Agent 像专家一样工作）**
 
 [English](README_EN.md) | [中文](README.md)
 
@@ -14,13 +15,22 @@
 
 ---
 
-## 🚀 什么是 AgenticFlow?
+## 🚀 核心理念：Everything is a Skill
 
-AgenticFlow 是一个**跨 IDE、跨平台**的标准化技能库，专为 AI Agent（如 Trae, Cursor, Copilot）设计。它不仅仅是一堆文档，而是经过结构化设计的**上下文（Context）**，旨在让 AI 在软件开发生命周期的每一个环节都能展现出专家级的水平。
+**AgenticFlow** 不仅仅是一个文档库，它定义了一种全新的 **AI 交互单元 —— "Skill"（技能）**。
 
-从**产品脑暴**到**架构设计**，从**全栈开发**到**自动化测试**，AgenticFlow 提供了一套开箱即用的“大脑扩展包”。
+在 AI 时代，"Skill" 是连接人类意图与模型能力的桥梁。一个高质量的 Skill 包含：
+1.  **Context (上下文)**：该领域所需的专业知识背景。
+2.  **SOP (标准作业程序)**：专家级的操作步骤和思维链。
+3.  **Pattern (模式)**：经过验证的最佳实践代码或结构。
 
-## 🌟 核心特性 (Why Use This?)
+**AgenticFlow** 将这些 Skill 封装成跨平台、标准化的模块，让您的 AI Agent（无论是 Trae, Cursor 还是 Copilot）瞬间获得特定领域的专家能力。
+
+## 🌟 为什么选择 AgenticFlow Skills?
+
+- **🎯 以 Skill 为核心 (Skill-Centric)**
+  - 每一个文件夹都是一个独立的 Skill。
+  - 像安装 npm 包一样为你的 AI "安装" 技能。
 
 - **🦄 万能适配 (Universal Adapter)**
   - **Trae Native**: 完美兼容 `.trae/Skills` 架构，即插即用。

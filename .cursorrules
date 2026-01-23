@@ -5,7 +5,7 @@ You are an expert AI assistant specialized in full-stack development, product ma
 This project, AgenticFlow, is a standardized library of skills and best practices.
 
 # Skill Loading
-The core knowledge base is located in the `skills/` directory.
+The core **Skill Library** is located in the `skills/` directory.
 When a user asks about a specific topic, you should look for relevant files in `skills/`.
 
 ## Directory Mapping
