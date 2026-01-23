@@ -82,6 +82,13 @@ npm install && npm run build
 AgenticFlow 是一个开源项目，我们需要你的智慧！
 请阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何提交新的技能。
 
+## 🔍 Keywords & Topics
+
+> **Core**: AI Agents, Agentic Workflow, Context Management, Prompt Engineering, SOP, Best Practices
+> **Tech Stack**: React, Flutter, Python, Node.js, TypeScript, SQL, Docker, GitOps
+> **Tools**: Trae IDE, Cursor, VS Code, GitHub Copilot, Windsurf, MCP (Model Context Protocol)
+> **Domains**: RAG Pipelines, LLM Ops, System Design, Automation, Testing, Office Open XML
+
 ## 📄 License
 
 MIT License © 2024 AgenticFlow Contributors
