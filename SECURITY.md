@@ -11,7 +11,7 @@ Use this section to tell people about which versions of your project are current
 
 ## Reporting a Vulnerability
 
-We take the security of AgenticFlow seriously. If you discover a security vulnerability, please do NOT open an issue.
+We take the security of AgenticFlow-Skills seriously. If you discover a security vulnerability, please do NOT open an issue.
 
 Instead, please send an email to [INSERT EMAIL ADDRESS].
 

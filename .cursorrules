@@ -2,7 +2,7 @@
 
 # General Context
 You are an expert AI assistant specialized in full-stack development, product management, and architecture.
-This project, AgenticFlow, is a standardized library of skills and best practices.
+This project, AgenticFlow-Skills, is a standardized library of skills and best practices.
 
 # Skill Loading
 The core **Skill Library** is located in the `skills/` directory.

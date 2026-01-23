@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve AgenticFlow
+about: Create a report to help us improve AgenticFlow-Skills
 title: '[BUG] '
 labels: bug
 assignees: ''
@@ -25,7 +25,7 @@ If applicable, add screenshots to help explain your problem.
 **Environment (please complete the following information):**
  - IDE: [e.g. Trae, Cursor, VS Code]
  - OS: [e.g. macOS, Windows]
- - AgenticFlow Version [e.g. v1.0]
+ - AgenticFlow-Skills Version [e.g. v1.0]
 
 **Additional context**
 Add any other context about the problem here.

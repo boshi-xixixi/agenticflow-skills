@@ -1,8 +1,8 @@
-# 🌊 AgenticFlow: The AI Skill Standard
+# 🌊 AgenticFlow-Skills: The AI Skill Standard
 
 <div align="center">
 
-![AgenticFlow](https://img.shields.io/badge/Agentic-Skills-blue?style=for-the-badge&logo=openai)
+![AgenticFlow-Skills](https://img.shields.io/badge/Agentic-Skills-blue?style=for-the-badge&logo=openai)
 ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 ![IDE Support](https://img.shields.io/badge/IDE-Trae%20|%20Cursor%20|%20VS%20Code-purple?style=for-the-badge)
 
@@ -17,16 +17,16 @@
 
 ## 🚀 核心理念：Everything is a Skill
 
-**AgenticFlow** 不仅仅是一个文档库，它定义了一种全新的 **AI 交互单元 —— "Skill"（技能）**。
+**AgenticFlow-Skills** 不仅仅是一个文档库，它定义了一种全新的 **AI 交互单元 —— "Skill"（技能）**。
 
 在 AI 时代，"Skill" 是连接人类意图与模型能力的桥梁。一个高质量的 Skill 包含：
 1.  **Context (上下文)**：该领域所需的专业知识背景。
 2.  **SOP (标准作业程序)**：专家级的操作步骤和思维链。
 3.  **Pattern (模式)**：经过验证的最佳实践代码或结构。
 
-**AgenticFlow** 将这些 Skill 封装成跨平台、标准化的模块，让您的 AI Agent（无论是 Trae, Cursor 还是 Copilot）瞬间获得特定领域的专家能力。
+**AgenticFlow-Skills** 将这些 Skill 封装成跨平台、标准化的模块，让您的 AI Agent（无论是 Trae, Cursor 还是 Copilot）瞬间获得特定领域的专家能力。
 
-## 🌟 为什么选择 AgenticFlow Skills?
+## 🌟 为什么选择 AgenticFlow-Skills?
 
 - **🎯 以 Skill 为核心 (Skill-Centric)**
   - 每一个文件夹都是一个独立的 Skill。
@@ -64,7 +64,7 @@
 ## 🛠️ IDE 配置指南
 
 ### 1. Trae 用户 🟦
-AgenticFlow 包含原生 `.trae/Skills` 目录。
+**AgenticFlow-Skills** 包含原生 `.trae/Skills` 目录。
 - **使用方式**: 直接打开本项目，Trae 的 AI 助手会自动加载所有技能。
 - **自定义**: 你可以在 `.trae/config` 中调整偏好（如果有）。
 
@@ -89,12 +89,12 @@ npm install && npm run build
 
 ## 🤝 参与贡献
 
-AgenticFlow 是一个开源项目，我们需要你的智慧！
+**AgenticFlow-Skills** 是一个开源项目，我们需要你的智慧！
 请阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 了解如何提交新的技能。
 
 ## 🔍 Keywords & Topics
 
-> **Core**: AI Agents, Agentic Workflow, Context Management, Prompt Engineering, SOP, Best Practices
+> **Core**: AI Agents, Agentic Workflow, Context Management, Prompt Engineering, SOP, Best Practices, **AI Skills**
 > **Tech Stack**: React, Flutter, Python, Node.js, TypeScript, SQL, Docker, GitOps
 > **Tools**: Trae IDE, Cursor, VS Code, GitHub Copilot, Windsurf, MCP (Model Context Protocol)
 > **Domains**: RAG Pipelines, LLM Ops, System Design, Automation, Testing, Office Open XML

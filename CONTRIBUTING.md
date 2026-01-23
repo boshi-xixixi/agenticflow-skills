@@ -1,11 +1,11 @@
-# Contributing to AgenticFlow
+# Contributing to AgenticFlow-Skills
 
-感谢你对 AgenticFlow 感兴趣！我们欢迎任何形式的贡献，包括文档改进、新技能添加、Bug 修复等。
+感谢你对 AgenticFlow-Skills 感兴趣！我们欢迎任何形式的贡献，包括文档改进、新技能添加、Bug 修复等。
 
 ## 贡献流程
 
 1. **Fork 本仓库**：点击右上角的 Fork 按钮。
-2. **克隆代码**：`git clone https://github.com/your-username/agenticFlow.git`
+2. **克隆代码**：`git clone https://github.com/your-username/agenticflow-skills.git`
 3. **创建分支**：`git checkout -b my-new-skill`
 4. **提交更改**：`git commit -am 'Add some skill'`
 5. **推送到远程**：`git push origin my-new-skill`
