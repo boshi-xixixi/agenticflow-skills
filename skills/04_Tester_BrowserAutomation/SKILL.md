@@ -1,112 +1,49 @@
 ---
-name: webapp-testing
-description: Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.
-license: Complete terms in LICENSE.txt
+name: Browser Automation Expert
+description: 浏览器自动化与网页测试专家。支持基于 MCP 工具（Puppeteer/Playwright）的实时交互，以及基于 Python 脚本的复杂自动化流实现。
 ---
 
-# Web Application Testing
+# Browser Automation Expert
 
-## 🤖 智能体与 MCP 增强 (Agent & MCP Enhancements)
+**Description:** 浏览器自动化与网页测试专家。支持基于 MCP 工具（Puppeteer/Playwright）的实时交互，以及基于 Python 脚本的复杂自动化流实现。
 
-本 Skill 支持并推荐配合特定的智能体角色和 MCP 工具使用，以获得最佳效果。
+**Details:**
 
-### 推荐智能体角色
-*   **QA Automation Engineer**: 详见 [AGENTS.md](AGENTS.md)。
-    *   该角色专注于编写抗脆性 (Anti-Flaky) 的自动化测试脚本。
-    *   启用后，AI 将自动采用 Page Object Model (POM) 模式进行代码组织。
+# Browser Automation 指南
 
-### 推荐 MCP 工具
-*   **Puppeteer/Playwright MCP**: 允许 AI 直接控制浏览器进行视觉验证和交互测试。
-*   **Filesystem MCP**: 用于保存测试截图和日志报告。
-*   **mcp-feedback-enhanced**: 允许 AI 在编写测试脚本前，使用 `ask_followup_question` 确认关键的测试路径或断言条件。
+你是一个浏览器自动化专家。你擅长操控浏览器来执行重复性的网页任务、抓取数据或进行 UI 自动化测试。
 
----
+## 策略：优先使用 MCP 工具
+**在执行任何操作前，优先检查 MCP 工具：**
+1.  **Puppeteer/Playwright MCP**: 检查工具列表中是否包含 `puppeteer_navigate`, `playwright_navigate` 等。
+2.  **优势**: 无需编写和运行本地脚本，实时反馈，环境零配置。
+3.  **适用场景**: 简单的网页截图、内容抓取、单页面交互。
 
-To test local web applications, write native Python Playwright scripts.
+## 进阶：Python 自动化脚本
+如果任务涉及复杂的逻辑（如：多级页面跳转、复杂的验证码处理、大规模并行采集），请使用本地 Python 脚本。
 
-**Helper Scripts Available**:
-- `scripts/with_server.py` - Manages server lifecycle (supports multiple servers)
+- **框架**: Playwright (推荐) 或 Selenium。
+- **参考示例**: 查看 `examples/` 目录下的脚本模式。
+- **环境**: 确保在脚本中正确处理浏览器驱动的初始化。
 
-**Always run scripts with `--help` first** to see usage. DO NOT read the source until you try running the script first and find that a customized solution is abslutely necessary. These scripts can be very large and thus pollute your context window. They exist to be called directly as black-box scripts rather than ingested into your context window.
+## 核心能力与工作流
 
-## Decision Tree: Choosing Your Approach
+### 1. 网页截图与视觉检查
+**Workflow**: 优先调用 `puppeteer_screenshot` 或 `playwright_screenshot`。
 
-```
-User task → Is it static HTML?
-    ├─ Yes → Read HTML file directly to identify selectors
-    │         ├─ Success → Write Playwright script using selectors
-    │         └─ Fails/Incomplete → Treat as dynamic (below)
-    │
-    └─ No (dynamic webapp) → Is the server already running?
-        ├─ No → Run: python scripts/with_server.py --help
-        │        Then use the helper + write simplified Playwright script
-        │
-        └─ Yes → Reconnaissance-then-action:
-            1. Navigate and wait for networkidle
-            2. Take screenshot or inspect DOM
-            3. Identify selectors from rendered state
-            4. Execute actions with discovered selectors
-```
+### 2. 动态内容抓取 (Scraping)
+**Workflow**: 
+1. 使用 `navigate` 打开网页。
+2. 使用 `evaluate` 执行 JavaScript 提取数据。
+3. 将结果整理为 Markdown 表格或 JSON。
 
-## Example: Using with_server.py
+### 3. UI 自动化测试
+**Workflow**: 
+1. 编写断言检查页面元素是否存在。
+2. 模拟用户点击、输入。
+3. 截图记录测试过程。
 
-To start a server, run `--help` first, then use the helper:
-
-**Single server:**
-```bash
-python scripts/with_server.py --server "npm run dev" --port 5173 -- python your_automation.py
-```
-
-**Multiple servers (e.g., backend + frontend):**
-```bash
-python scripts/with_server.py \
-  --server "cd backend && python server.py" --port 3000 \
-  --server "cd frontend && npm run dev" --port 5173 \
-  -- python your_automation.py
-```
-
-To create an automation script, include only Playwright logic (servers are managed automatically):
-```python
-from playwright.sync_api import sync_playwright
-
-with sync_playwright() as p:
-    browser = p.chromium.launch(headless=True) # Always launch chromium in headless mode
-    page = browser.new_page()
-    page.goto('http://localhost:5173') # Server already running and ready
-    page.wait_for_load_state('networkidle') # CRITICAL: Wait for JS to execute
-    # ... your automation logic
-    browser.close()
-```
-
-## Reconnaissance-Then-Action Pattern
-
-1. **Inspect rendered DOM**:
-   ```python
-   page.screenshot(path='/tmp/inspect.png', full_page=True)
-   content = page.content()
-   page.locator('button').all()
-   ```
-
-2. **Identify selectors** from inspection results
-
-3. **Execute actions** using discovered selectors
-
-## Common Pitfall
-
-❌ **Don't** inspect the DOM before waiting for `networkidle` on dynamic apps
-✅ **Do** wait for `page.wait_for_load_state('networkidle')` before inspection
-
-## Best Practices
-
-- **Use bundled scripts as black boxes** - To accomplish a task, consider whether one of the scripts available in `scripts/` can help. These scripts handle common, complex workflows reliably without cluttering the context window. Use `--help` to see usage, then invoke directly. 
-- Use `sync_playwright()` for synchronous scripts
-- Always close the browser when done
-- Use descriptive selectors: `text=`, `role=`, CSS selectors, or IDs
-- Add appropriate waits: `page.wait_for_selector()` or `page.wait_for_timeout()`
-
-## Reference Files
-
-- **examples/** - Examples showing common patterns:
-  - `element_discovery.py` - Discovering buttons, links, and inputs on a page
-  - `static_html_automation.py` - Using file:// URLs for local HTML
-  - `console_logging.py` - Capturing console logs during automation
+## 交互原则
+1.  **环境探测**: 首次运行自动化任务时，先列出你打算使用的 MCP 工具或脚本库。
+2.  **异常处理**: 网页加载超时或元素未找到时，应尝试截图以辅助诊断。
+3.  **隐私保护**: 避免在脚本或工具调用中泄露敏感的个人凭据。

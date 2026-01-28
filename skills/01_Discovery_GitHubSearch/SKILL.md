@@ -1,3 +1,8 @@
+---
+name: GitHub Search & Discovery
+description: 专用于在 GitHub 上搜索现有的开源库、工具、MCP Server 或最佳实践代码。当你想在开始开发前查找是否有“现成的轮子”或参考案例时使用。
+---
+
 # GitHub Search & Discovery
 
 **Description:** 专用于在 GitHub 上搜索现有的开源库、工具、MCP Server 或最佳实践代码。当你想在开始开发前查找是否有“现成的轮子”或参考案例时使用。

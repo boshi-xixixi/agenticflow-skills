@@ -1,3 +1,8 @@
+---
+name: Gitee Workflow Automation
+description: 深度集成 Gitee MCP，实现 Issue 管理、PR 自动化提交、代码审查和版本发布的全流程自动化。
+---
+
 # Gitee Workflow Automation
 
 **Description:** 深度集成 Gitee MCP，实现 Issue 管理、PR 自动化提交、代码审查和版本发布的全流程自动化。
